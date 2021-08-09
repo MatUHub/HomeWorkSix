@@ -36,8 +36,7 @@ public class FragmentDescription extends Fragment {
         View view = inflater.inflate(R.layout.fragment_description, container,false);
         TextView textView1 = view.findViewById(R.id.textView1);
         textView1.setText(this.notes.getName());
-        TextView textView2 = view.findViewById(R.id.textView2);
-        textView2.setText(this.notes.getName());
+
         return view;
     }
 }

@@ -14,12 +14,12 @@ public class MainActivity extends AppCompatActivity {
 
         getSupportFragmentManager().
                 beginTransaction().
-                replace(R.id.notes, NotesFragment.newInstance()).
+                replace(R.id.notes_container, NotesFragment.newInstance()).
                 commit();
         if (getResources().getConfiguration().orientation == Configuration.ORIENTATION_LANDSCAPE) {
             getSupportFragmentManager().
                     beginTransaction().
-                    replace(R.id.description, FragmentDescription.newInstance(new Notes("text","text"))).
+                    replace(R.id.description_container, FragmentDescription.newInstance(new Notes("text","text"))).
                     commit();
         }
     }
